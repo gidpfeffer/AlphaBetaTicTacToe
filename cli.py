@@ -34,8 +34,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("agent0", type=str, choices=['basic', 'student'])
     parser.add_argument("agent1", type=str, choices=['basic', 'student'])
-    parser.add_argument("agent0alg", type=str, choices=['minimax', 'alphabeta'])
-    parser.add_argument("agent1alg", type=str, choices=['minimax', 'alphabeta'])
     args = parser.parse_args()
 
     if args.agent0 == 'basic':
